@@ -2,12 +2,141 @@ body{
     /* display: flex; */
     height: 100%;
     width: 100%;
+    /* background:
+    url(https://www.spacex.com/static/images/backgrounds-2021/HP_SN11_Vertical_20210311_IMG_01221.webp) bottom center no-repeat,
+    url(https://www.spacex.com/static/images/backgrounds-2021/HP_Star23_DSC_4468.webp) repeat;
+    background-size: cover;
+    background-position-y: center; */
+}
+
+.page{
+    background-size: cover;
+    background-position-y: center; 
+    width: 100%;
+    height: 100vh;
+}
+
+.page1{
+    /* width: 100%;
+    height: 100vh; */
+    display: inline-block;
+    background: url(https://www.spacex.com/static/images/backgrounds-2021/HP_SN11_Vertical_20210311_IMG_01221.webp) bottom center no-repeat;
+    background-size: cover;
+    background-position-y: center; 
+}
+
+header{
+    /* background-color: azure; */
+    height: 150px;
+    width: 100%;
+}
+
+nav{
+    /* background-color: brown; */
+    /* height: 100%; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
 }
 
 .header-inner{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    /* background-color: blueviolet; */
+    height: 100%;
+    width: 70%;
+    position: relative
 }
 
-header > div{
-    background-image: url("https://www.spacex.com/static/images/backgrounds-2021/HP_SN11_Vertical_20210311_IMG_01221.jpg");
+
+.header-inner > ul{
+    /* background-color: cadetblue; */
+    display: flex;
+    height: 60%;
+    width: 50%;
+    min-width: 745px;
+    justify-content:space-between;
+    align-items: center;
+    /* position:absolute */
 }
+
+.nav-right{
+    /* background-color: burlywood; */
+    display: flex;
+    width: 15%;
+    height: 80%;
+    align-items: center;
+    justify-content:flex-end;
+    
+}
+
+#main{
+    width: 20%;
+    height: 60%;
+    /* background-color: teal; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    width: 90%
+}
+
+#menuToggle{
+    margin: 20px
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span{
+    display: block;
+  width: 25px;
+  height: 3px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #ffffff;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+}
+
+/* .page1{
+    background: url(https://www.spacex.com/static/images/backgrounds-2021/HP_SN11_Vertical_20210311_IMG_01221.webp);
+    width: 100%;
+    height: 100vh;
+    /* display: inline; 
+}*/
+
+/* header > div{
+    background-image: url("https://www.spacex.com/static/images/backgrounds-2021/HP_SN11_Vertical_20210311_IMG_01221.jpg");
+} */

@@ -11,13 +11,15 @@
 </head>
 
 <body>
+    
+    <div class="page page1">
     <header>
         <nav>
             <div class="header-inner">
+                <div id="main">
+                    <img src="https://cdn.freebiesupply.com/logos/large/2x/spacex-logo-black-and-white.png"id="logo" href=""></img>
+                </div>
                 <ul>
-                    <li>
-                        <a href="">SPACEX</a>
-                    </li>
                     <li>
                         <a href="">FALCON 9</a>
                     </li>
@@ -40,13 +42,27 @@
             </div>
             <div class="nav-right">
                 <a href="">SHOP</a>
-                <button class="hamburger"></button>
-            </div>
-
-        </nav>
-    </header>
-
-    <div class="page">
+                <div id="menuToggle">
+                    <!--
+                        A fake / hidden checkbox is used as click reciever,
+                        so you can use the :checked selector on it.
+                    -->
+                    <input type="checkbox" />
+                    
+                    <!--
+                        Some spans to act as a hamburger.
+                        
+                        They are acting like a real hamburger,
+                        not that McDonalds stuff.
+                    -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+            </nav>
+        </header>
+        
         <h4>FLIGHT TEST</h4>
         <h1>STARSHIP SN11 HIGH-ALTITUDE FLIGHT TEST</h1>
         <button>REPLAY</button>
